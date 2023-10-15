@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_3
 {
+    //CLASE AMIGOSECRETO
     internal class AmigoSecreto
     {
         int cantJuga;
@@ -38,6 +39,7 @@ namespace Laboratorio_3
 
         public void asignacionJugador(String nombre, String correo, String endulzadaIdeal, String regaloIdeal, int i)
         {
+            jugadores = new Jugador[cantJuga];
             jugadores[i] = new Jugador(nombre, correo, endulzadaIdeal, regaloIdeal);
         }
 
