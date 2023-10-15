@@ -6,23 +6,28 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_3
 {
-    //CLASE AMIGOSECRETO
+    //Creacion de clase AmigoSecreto
     internal class AmigoSecreto
     {
+        //Definicion de variables
         int cantJuga;
         DateTime fechaInicio;
         DateTime descubrimiento;
         int numEndulzadas;
         int frecuencia;
         int valorEndulzada;
-        int valorRegalo;
+        int valorRegalo; 
+
+        //Creacion de vector
         private Jugador[] jugadores;
 
+        //Metodo retornar cantidad de jugadores
         public int getCantJuga()
         {
             return cantJuga;
         }
 
+        //
         public  void DatosAmigo(int cantJuga, DateTime fechaInicio, DateTime descubirmiento, int numEndulzadas, int frecuencia,
             int valorEndulzada, int valorRegalo)
         {
@@ -37,12 +42,14 @@ namespace Laboratorio_3
             jugadores = new Jugador[cantJuga];
         }
 
+        //Metodo asignar jugador a posicion del vector
         public void asignacionJugador(String nombre, String correo, String endulzadaIdeal, String regaloIdeal, int i)
         {
             jugadores = new Jugador[cantJuga];
             jugadores[i] = new Jugador(nombre, correo, endulzadaIdeal, regaloIdeal);
         }
 
+        //Metodo asignar el amigo secreto a jugador
         public void asignarAmigo()
         {
             Random random = new Random();

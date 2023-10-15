@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_3
 {
+    //Creacion de clase Jugador
     internal class Jugador
     {
+        //Definicion de variables
         String nombre;
         String correo;
         String endulzada;
         String regalo;
         int amigoSecreto;
 
+        //
         public Jugador(String nombre, String correo, String endulzada, String regalo)
         {
             this.nombre = nombre;
@@ -22,6 +25,7 @@ namespace Laboratorio_3
             this.regalo = regalo;
         }
 
+        //Metodos setters y getters
         public String getNombre()
         {
             return nombre;
