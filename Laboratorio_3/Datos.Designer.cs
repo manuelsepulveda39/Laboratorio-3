@@ -155,6 +155,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Datos";
             this.Text = "Datos jugadores";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Datos_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

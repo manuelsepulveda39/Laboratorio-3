@@ -128,21 +128,21 @@
             this.numEndulzadas.Location = new System.Drawing.Point(180, 215);
             this.numEndulzadas.Name = "numEndulzadas";
             this.numEndulzadas.Size = new System.Drawing.Size(100, 20);
-            this.numEndulzadas.TabIndex = 10;
+            this.numEndulzadas.TabIndex = 8;
             // 
             // textBoxFechaInicio
             // 
             this.textBoxFechaInicio.Location = new System.Drawing.Point(81, 140);
             this.textBoxFechaInicio.Name = "textBoxFechaInicio";
             this.textBoxFechaInicio.Size = new System.Drawing.Size(199, 20);
-            this.textBoxFechaInicio.TabIndex = 11;
+            this.textBoxFechaInicio.TabIndex = 6;
             // 
             // textBoxFecha
             // 
             this.textBoxFecha.Location = new System.Drawing.Point(80, 177);
             this.textBoxFecha.Name = "textBoxFecha";
             this.textBoxFecha.Size = new System.Drawing.Size(200, 20);
-            this.textBoxFecha.TabIndex = 12;
+            this.textBoxFecha.TabIndex = 7;
             // 
             // label8
             // 

@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Laboratorio_3
 {
     //Creacion de clase AmigoSecreto
-    internal class AmigoSecreto
+    public class AmigoSecreto
     {
         //Definicion de variables
         int cantJuga;
@@ -38,14 +39,13 @@ namespace Laboratorio_3
             this.frecuencia = frecuencia;
             this.valorEndulzada = valorEndulzada;
             this.valorRegalo = valorRegalo;
-
-            jugadores = new Jugador[cantJuga];
+            
         }
 
         //Metodo asignar jugador a posicion del vector
         public void asignacionJugador(String nombre, String correo, String endulzadaIdeal, String regaloIdeal, int i)
         {
-            jugadores = new Jugador[cantJuga];
+            Jugador[] jugadores = new Jugador[cantJuga];
             jugadores[i] = new Jugador(nombre, correo, endulzadaIdeal, regaloIdeal);
         }
 

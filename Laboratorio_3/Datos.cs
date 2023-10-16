@@ -15,16 +15,18 @@ namespace Laboratorio_3
     public partial class Datos : Form
     {
         int contador = 0;
-        AmigoSecreto amigoSecreto = new AmigoSecreto();
-        
+        AmigoSecreto amigoSecreto = null;
 
-        public Datos()
+        public Datos(AmigoSecreto amigoSecreto)
         {
             InitializeComponent();
+            this.amigoSecreto = amigoSecreto;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+
             int cantJuga = amigoSecreto.getCantJuga();
 
             if (string.IsNullOrEmpty(nombree.Text) || string.IsNullOrEmpty(correoo.Text) || string.IsNullOrEmpty(endulzadaa.Text) || string.IsNullOrEmpty(regaloo.Text))
@@ -47,6 +49,7 @@ namespace Laboratorio_3
                     correoo.Clear();
                     endulzadaa.Clear();
                     regaloo.Clear();
+
                 }
                 if (cantJuga - 2 == contador)
                 {
@@ -59,6 +62,10 @@ namespace Laboratorio_3
                     this.Hide();
                 }
             }
+        }
+        private void Datos_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -16,5 +16,10 @@ namespace Laboratorio_3
         {
             InitializeComponent();
         }
+
+        private void informacionJuego_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

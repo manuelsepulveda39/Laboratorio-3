@@ -12,6 +12,8 @@ namespace Laboratorio_3
 {
     public partial class inicio : Form
     {
+        public AmigoSecreto amigoSecreto = new AmigoSecreto();
+
         public inicio()
         {
             InitializeComponent();
@@ -27,6 +29,7 @@ namespace Laboratorio_3
                 int numEndul;
                 if (int.TryParse(numeroEndulzadas, out numEndul) && numEndul>0)
                 {
+
                     String frecuenciaEndulzadas = frecuenEndulza.Text;
                     int frecuencia;
                     if (int.TryParse(frecuenciaEndulzadas, out frecuencia) && frecuencia>0)
@@ -46,12 +49,12 @@ namespace Laboratorio_3
                                 DateTime descubrimiento = fechaInicio;
                                 descubrimiento.AddDays(diasDescubrimiento);
 
-                                AmigoSecreto amigoSecreto = new AmigoSecreto();
+                                
                                 amigoSecreto.DatosAmigo(cantJuga, fechaInicio, descubrimiento, numEndul, frecuencia,
                                     valorEndul, valorReg);
-                                Datos datos = new Datos();
-                                datos.Show();
+                                Datos datos = new Datos(amigoSecreto);
                                 this.Hide();
+                                datos.ShowDialog();
                             }
                             else
                             {
