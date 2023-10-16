@@ -39,7 +39,27 @@ namespace Laboratorio_3
             this.frecuencia = frecuencia;
             this.valorEndulzada = valorEndulzada;
             this.valorRegalo = valorRegalo;
-            
+        }
+
+        public String nombreJugador(int i)
+        {
+            return jugadores[i].getNombre();
+        }
+        public String correoJugador(int i)
+        {
+            return jugadores[i].getCorreo();
+        }
+        public String amigoJugador(int i)
+        {
+            return jugadores[jugadores[i].getAmigoSecreto()].getNombre();
+        }
+        public String endulzadaAmigoJugador(int i)
+        {
+            return jugadores[jugadores[i].getAmigoSecreto()].getEndulzada();
+        }
+        public String regaloAmigoJugador(int i)
+        {
+            return jugadores[jugadores[i].getAmigoSecreto()].getRegalo();
         }
 
         //Metodo asignar jugador a posicion del vector
@@ -69,7 +89,7 @@ namespace Laboratorio_3
 
                     for (int j = 0; j < i; j++)
                     {
-                        if (numerosAleatorios[j] == numeroAleatorio)
+                        if (numerosAleatorios[j] == numeroAleatorio && numeroAleatorio != i)
                         {
                             repetido = true;
                             break;
@@ -90,5 +110,48 @@ namespace Laboratorio_3
 
         }
 
+        public DateTime getFechaInicio()
+        {
+            return fechaInicio;
+        }
+        public DateTime getDescubrimiento()
+        {
+            return descubrimiento;
+        }
+        public int getNumEndulzadas()
+        {
+            return numEndulzadas;
+        }
+        public int getFrecuencia()
+        {
+            return frecuencia;
+        }
+        public int getValorEndulzada()
+        {
+            return valorEndulzada;
+        }
+        public int getValorRegalo()
+        {
+            return valorRegalo;
+        }
+
+        public String proximaEndulzada()
+        {
+            if (fechaInicio > DateTime.Now)
+            {
+                return (fechaInicio).ToString();
+            }
+            else
+            {
+                for (int i = 1; i < numEndulzadas; i++)
+                {
+                    if (fechaInicio.AddDays(frecuencia*i) > DateTime.Now)
+                    {
+                        return (fechaInicio.AddDays(frecuencia * i).ToString());
+                    }
+                }
+            }
+            return "Ya se acabo el juego";
+        }
     }
 }

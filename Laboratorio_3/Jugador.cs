@@ -46,7 +46,7 @@ namespace Laboratorio_3
             return regalo;
         }
 
-        public int getAMigoSecreto()
+        public int getAmigoSecreto()
         {
             return amigoSecreto;
         }

@@ -36,10 +36,8 @@
             this.cantJugadores = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.numEndulzadas = new System.Windows.Forms.TextBox();
             this.textBoxFechaInicio = new System.Windows.Forms.DateTimePicker();
-            this.textBoxFecha = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -114,18 +112,9 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "juego";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(22, 183);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 13);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Fecha";
-            // 
             // numEndulzadas
             // 
-            this.numEndulzadas.Location = new System.Drawing.Point(180, 215);
+            this.numEndulzadas.Location = new System.Drawing.Point(180, 183);
             this.numEndulzadas.Name = "numEndulzadas";
             this.numEndulzadas.Size = new System.Drawing.Size(100, 20);
             this.numEndulzadas.TabIndex = 8;
@@ -137,17 +126,10 @@
             this.textBoxFechaInicio.Size = new System.Drawing.Size(199, 20);
             this.textBoxFechaInicio.TabIndex = 6;
             // 
-            // textBoxFecha
-            // 
-            this.textBoxFecha.Location = new System.Drawing.Point(80, 177);
-            this.textBoxFecha.Name = "textBoxFecha";
-            this.textBoxFecha.Size = new System.Drawing.Size(200, 20);
-            this.textBoxFecha.TabIndex = 7;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(24, 215);
+            this.label8.Location = new System.Drawing.Point(24, 183);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(101, 13);
             this.label8.TabIndex = 13;
@@ -156,7 +138,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 228);
+            this.label9.Location = new System.Drawing.Point(12, 196);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(131, 13);
             this.label9.TabIndex = 14;
@@ -165,7 +147,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 257);
+            this.label5.Location = new System.Drawing.Point(14, 225);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 13);
             this.label5.TabIndex = 15;
@@ -174,7 +156,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(52, 270);
+            this.label10.Location = new System.Drawing.Point(52, 238);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(47, 13);
             this.label10.TabIndex = 16;
@@ -182,7 +164,7 @@
             // 
             // frecuenEndulza
             // 
-            this.frecuenEndulza.Location = new System.Drawing.Point(180, 261);
+            this.frecuenEndulza.Location = new System.Drawing.Point(180, 229);
             this.frecuenEndulza.Name = "frecuenEndulza";
             this.frecuenEndulza.Size = new System.Drawing.Size(100, 20);
             this.frecuenEndulza.TabIndex = 17;
@@ -190,7 +172,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(29, 303);
+            this.label11.Location = new System.Drawing.Point(29, 271);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(83, 13);
             this.label11.TabIndex = 18;
@@ -198,7 +180,7 @@
             // 
             // valorEndulza
             // 
-            this.valorEndulza.Location = new System.Drawing.Point(180, 300);
+            this.valorEndulza.Location = new System.Drawing.Point(180, 268);
             this.valorEndulza.Name = "valorEndulza";
             this.valorEndulza.Size = new System.Drawing.Size(100, 20);
             this.valorEndulza.TabIndex = 19;
@@ -206,7 +188,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(37, 335);
+            this.label12.Location = new System.Drawing.Point(37, 303);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(63, 13);
             this.label12.TabIndex = 20;
@@ -214,14 +196,14 @@
             // 
             // valorRega
             // 
-            this.valorRega.Location = new System.Drawing.Point(180, 334);
+            this.valorRega.Location = new System.Drawing.Point(180, 302);
             this.valorRega.Name = "valorRega";
             this.valorRega.Size = new System.Drawing.Size(100, 20);
             this.valorRega.TabIndex = 21;
             // 
             // continuar
             // 
-            this.continuar.Location = new System.Drawing.Point(116, 372);
+            this.continuar.Location = new System.Drawing.Point(116, 340);
             this.continuar.Name = "continuar";
             this.continuar.Size = new System.Drawing.Size(75, 23);
             this.continuar.TabIndex = 22;
@@ -234,7 +216,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(311, 407);
+            this.ClientSize = new System.Drawing.Size(311, 373);
             this.Controls.Add(this.continuar);
             this.Controls.Add(this.valorRega);
             this.Controls.Add(this.label12);
@@ -245,10 +227,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBoxFecha);
             this.Controls.Add(this.textBoxFechaInicio);
             this.Controls.Add(this.numEndulzadas);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label);
             this.Controls.Add(this.cantJugadores);
@@ -273,10 +253,8 @@
         private System.Windows.Forms.TextBox cantJugadores;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox numEndulzadas;
         private System.Windows.Forms.DateTimePicker textBoxFechaInicio;
-        private System.Windows.Forms.DateTimePicker textBoxFecha;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;

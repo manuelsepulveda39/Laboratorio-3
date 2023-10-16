@@ -43,13 +43,11 @@ namespace Laboratorio_3
                             if(int.TryParse(valorRegalo, out valorReg) && valorReg > 0)
                             {
                                 DateTime fechaInicio = DateTime.Parse(textBoxFechaInicio.Text);
-                                DateTime fecha = DateTime.Parse(textBoxFecha.Text);
 
                                 int diasDescubrimiento = frecuencia * numEndul;
-                                DateTime descubrimiento = fechaInicio;
-                                descubrimiento.AddDays(diasDescubrimiento);
+                                DateTime descubrimiento = fechaInicio.AddDays(diasDescubrimiento);
 
-                                
+
                                 amigoSecreto.DatosAmigo(cantJuga, fechaInicio, descubrimiento, numEndul, frecuencia,
                                     valorEndul, valorReg);
                                 Datos datos = new Datos(amigoSecreto);

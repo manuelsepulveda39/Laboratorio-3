@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Informacion));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.nombre = new System.Windows.Forms.Label();
-            this.correo = new System.Windows.Forms.Label();
+            this.nombree = new System.Windows.Forms.Label();
+            this.correoo = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.amigoSecreto = new System.Windows.Forms.Label();
+            this.amigoSecret = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.endulzadaIdeal = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -63,23 +63,23 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre:";
             // 
-            // nombre
+            // nombree
             // 
-            this.nombre.AutoSize = true;
-            this.nombre.Location = new System.Drawing.Point(67, 55);
-            this.nombre.Name = "nombre";
-            this.nombre.Size = new System.Drawing.Size(35, 13);
-            this.nombre.TabIndex = 2;
-            this.nombre.Text = "label3";
+            this.nombree.AutoSize = true;
+            this.nombree.Location = new System.Drawing.Point(67, 55);
+            this.nombree.Name = "nombree";
+            this.nombree.Size = new System.Drawing.Size(35, 13);
+            this.nombree.TabIndex = 2;
+            this.nombree.Text = "label3";
             // 
-            // correo
+            // correoo
             // 
-            this.correo.AutoSize = true;
-            this.correo.Location = new System.Drawing.Point(64, 79);
-            this.correo.Name = "correo";
-            this.correo.Size = new System.Drawing.Size(35, 13);
-            this.correo.TabIndex = 4;
-            this.correo.Text = "label3";
+            this.correoo.AutoSize = true;
+            this.correoo.Location = new System.Drawing.Point(64, 79);
+            this.correoo.Name = "correoo";
+            this.correoo.Size = new System.Drawing.Size(35, 13);
+            this.correoo.TabIndex = 4;
+            this.correoo.Text = "label3";
             // 
             // label4
             // 
@@ -90,14 +90,14 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Correo:";
             // 
-            // amigoSecreto
+            // amigoSecret
             // 
-            this.amigoSecreto.AutoSize = true;
-            this.amigoSecreto.Location = new System.Drawing.Point(96, 102);
-            this.amigoSecreto.Name = "amigoSecreto";
-            this.amigoSecreto.Size = new System.Drawing.Size(35, 13);
-            this.amigoSecreto.TabIndex = 6;
-            this.amigoSecreto.Text = "label3";
+            this.amigoSecret.AutoSize = true;
+            this.amigoSecret.Location = new System.Drawing.Point(96, 102);
+            this.amigoSecret.Name = "amigoSecret";
+            this.amigoSecret.Size = new System.Drawing.Size(35, 13);
+            this.amigoSecret.TabIndex = 6;
+            this.amigoSecret.Text = "label3";
             // 
             // label5
             // 
@@ -152,6 +152,7 @@
             this.siguiente.TabIndex = 11;
             this.siguiente.Text = "Siguiente jugador";
             this.siguiente.UseVisualStyleBackColor = true;
+            this.siguiente.Click += new System.EventHandler(this.siguiente_Click);
             // 
             // button1
             // 
@@ -161,6 +162,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Informacion de juego";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Informacion
             // 
@@ -174,11 +176,11 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.endulzadaIdeal);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.amigoSecreto);
+            this.Controls.Add(this.amigoSecret);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.correo);
+            this.Controls.Add(this.correoo);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.nombre);
+            this.Controls.Add(this.nombree);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -195,10 +197,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label nombre;
-        private System.Windows.Forms.Label correo;
+        private System.Windows.Forms.Label nombree;
+        private System.Windows.Forms.Label correoo;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label amigoSecreto;
+        private System.Windows.Forms.Label amigoSecret;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label endulzadaIdeal;
         private System.Windows.Forms.Label label6;

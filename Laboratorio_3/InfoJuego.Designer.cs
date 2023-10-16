@@ -1,6 +1,6 @@
 ﻿namespace Laboratorio_3
 {
-    partial class informacionJuego
+    partial class InformacionJuego
     {
         /// <summary>
         /// Required designer variable.
@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(informacionJuego));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InformacionJuego));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.fechaInicio = new System.Windows.Forms.Label();
-            this.fechaFin = new System.Windows.Forms.Label();
+            this.fechaFinn = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.numeroEndulzadas = new System.Windows.Forms.Label();
+            this.numeroEndulzadass = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.frecuenciaEndulzada = new System.Windows.Forms.Label();
+            this.frecuenciaEndulzadaa = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.valorEndulzada = new System.Windows.Forms.Label();
+            this.valorEndulzadaa = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.valorRegalo = new System.Windows.Forms.Label();
+            this.valorRegaloo = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.proximaEndulzada = new System.Windows.Forms.Label();
+            this.proximaEndulzadaa = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.fechaInicioo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(45, 18);
+            this.label1.Location = new System.Drawing.Point(50, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 23);
             this.label1.TabIndex = 0;
@@ -66,23 +66,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Fecha de inicio";
             // 
-            // fechaInicio
+            // fechaFinn
             // 
-            this.fechaInicio.AutoSize = true;
-            this.fechaInicio.Location = new System.Drawing.Point(126, 59);
-            this.fechaInicio.Name = "fechaInicio";
-            this.fechaInicio.Size = new System.Drawing.Size(35, 13);
-            this.fechaInicio.TabIndex = 3;
-            this.fechaInicio.Text = "label4";
-            // 
-            // fechaFin
-            // 
-            this.fechaFin.AutoSize = true;
-            this.fechaFin.Location = new System.Drawing.Point(159, 83);
-            this.fechaFin.Name = "fechaFin";
-            this.fechaFin.Size = new System.Drawing.Size(35, 13);
-            this.fechaFin.TabIndex = 6;
-            this.fechaFin.Text = "label5";
+            this.fechaFinn.AutoSize = true;
+            this.fechaFinn.Location = new System.Drawing.Point(159, 83);
+            this.fechaFinn.Name = "fechaFinn";
+            this.fechaFinn.Size = new System.Drawing.Size(35, 13);
+            this.fechaFinn.TabIndex = 6;
+            this.fechaFinn.Text = "label5";
             // 
             // label7
             // 
@@ -102,14 +93,14 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "Numero endulzadas";
             // 
-            // numeroEndulzadas
+            // numeroEndulzadass
             // 
-            this.numeroEndulzadas.AutoSize = true;
-            this.numeroEndulzadas.Location = new System.Drawing.Point(134, 108);
-            this.numeroEndulzadas.Name = "numeroEndulzadas";
-            this.numeroEndulzadas.Size = new System.Drawing.Size(35, 13);
-            this.numeroEndulzadas.TabIndex = 8;
-            this.numeroEndulzadas.Text = "label9";
+            this.numeroEndulzadass.AutoSize = true;
+            this.numeroEndulzadass.Location = new System.Drawing.Point(134, 108);
+            this.numeroEndulzadass.Name = "numeroEndulzadass";
+            this.numeroEndulzadass.Size = new System.Drawing.Size(35, 13);
+            this.numeroEndulzadass.TabIndex = 8;
+            this.numeroEndulzadass.Text = "label9";
             // 
             // label4
             // 
@@ -120,14 +111,14 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Frecuencia endulzadas";
             // 
-            // frecuenciaEndulzada
+            // frecuenciaEndulzadaa
             // 
-            this.frecuenciaEndulzada.AutoSize = true;
-            this.frecuenciaEndulzada.Location = new System.Drawing.Point(149, 134);
-            this.frecuenciaEndulzada.Name = "frecuenciaEndulzada";
-            this.frecuenciaEndulzada.Size = new System.Drawing.Size(35, 13);
-            this.frecuenciaEndulzada.TabIndex = 10;
-            this.frecuenciaEndulzada.Text = "label5";
+            this.frecuenciaEndulzadaa.AutoSize = true;
+            this.frecuenciaEndulzadaa.Location = new System.Drawing.Point(149, 134);
+            this.frecuenciaEndulzadaa.Name = "frecuenciaEndulzadaa";
+            this.frecuenciaEndulzadaa.Size = new System.Drawing.Size(35, 13);
+            this.frecuenciaEndulzadaa.TabIndex = 10;
+            this.frecuenciaEndulzadaa.Text = "label5";
             // 
             // label5
             // 
@@ -138,14 +129,14 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Valor endulzada";
             // 
-            // valorEndulzada
+            // valorEndulzadaa
             // 
-            this.valorEndulzada.AutoSize = true;
-            this.valorEndulzada.Location = new System.Drawing.Point(126, 161);
-            this.valorEndulzada.Name = "valorEndulzada";
-            this.valorEndulzada.Size = new System.Drawing.Size(35, 13);
-            this.valorEndulzada.TabIndex = 12;
-            this.valorEndulzada.Text = "label9";
+            this.valorEndulzadaa.AutoSize = true;
+            this.valorEndulzadaa.Location = new System.Drawing.Point(126, 161);
+            this.valorEndulzadaa.Name = "valorEndulzadaa";
+            this.valorEndulzadaa.Size = new System.Drawing.Size(35, 13);
+            this.valorEndulzadaa.TabIndex = 12;
+            this.valorEndulzadaa.Text = "label9";
             // 
             // label9
             // 
@@ -156,14 +147,14 @@
             this.label9.TabIndex = 13;
             this.label9.Text = "Valor regalo";
             // 
-            // valorRegalo
+            // valorRegaloo
             // 
-            this.valorRegalo.AutoSize = true;
-            this.valorRegalo.Location = new System.Drawing.Point(97, 187);
-            this.valorRegalo.Name = "valorRegalo";
-            this.valorRegalo.Size = new System.Drawing.Size(41, 13);
-            this.valorRegalo.TabIndex = 14;
-            this.valorRegalo.Text = "label10";
+            this.valorRegaloo.AutoSize = true;
+            this.valorRegaloo.Location = new System.Drawing.Point(97, 187);
+            this.valorRegaloo.Name = "valorRegaloo";
+            this.valorRegaloo.Size = new System.Drawing.Size(41, 13);
+            this.valorRegaloo.TabIndex = 14;
+            this.valorRegaloo.Text = "label10";
             // 
             // label10
             // 
@@ -174,14 +165,14 @@
             this.label10.TabIndex = 15;
             this.label10.Text = "Proxima endulzada";
             // 
-            // proximaEndulzada
+            // proximaEndulzadaa
             // 
-            this.proximaEndulzada.AutoSize = true;
-            this.proximaEndulzada.Location = new System.Drawing.Point(134, 215);
-            this.proximaEndulzada.Name = "proximaEndulzada";
-            this.proximaEndulzada.Size = new System.Drawing.Size(41, 13);
-            this.proximaEndulzada.TabIndex = 16;
-            this.proximaEndulzada.Text = "label11";
+            this.proximaEndulzadaa.AutoSize = true;
+            this.proximaEndulzadaa.Location = new System.Drawing.Point(134, 215);
+            this.proximaEndulzadaa.Name = "proximaEndulzadaa";
+            this.proximaEndulzadaa.Size = new System.Drawing.Size(41, 13);
+            this.proximaEndulzadaa.TabIndex = 16;
+            this.proximaEndulzadaa.Text = "label11";
             // 
             // button1
             // 
@@ -191,31 +182,41 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Regresar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // informacionJuego
+            // fechaInicioo
+            // 
+            this.fechaInicioo.AutoSize = true;
+            this.fechaInicioo.Location = new System.Drawing.Point(117, 59);
+            this.fechaInicioo.Name = "fechaInicioo";
+            this.fechaInicioo.Size = new System.Drawing.Size(35, 13);
+            this.fechaInicioo.TabIndex = 18;
+            this.fechaInicioo.Text = "label3";
+            // 
+            // InformacionJuego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(281, 287);
+            this.ClientSize = new System.Drawing.Size(301, 287);
+            this.Controls.Add(this.fechaInicioo);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.proximaEndulzada);
+            this.Controls.Add(this.proximaEndulzadaa);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.valorRegalo);
+            this.Controls.Add(this.valorRegaloo);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.valorEndulzada);
+            this.Controls.Add(this.valorEndulzadaa);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.frecuenciaEndulzada);
+            this.Controls.Add(this.frecuenciaEndulzadaa);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.numeroEndulzadas);
+            this.Controls.Add(this.numeroEndulzadass);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.fechaFin);
+            this.Controls.Add(this.fechaFinn);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.fechaInicio);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "informacionJuego";
+            this.Name = "InformacionJuego";
             this.Text = "Informacion juego";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.informacionJuego_FormClosed);
             this.ResumeLayout(false);
@@ -227,19 +228,19 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label fechaInicio;
-        private System.Windows.Forms.Label fechaFin;
+        private System.Windows.Forms.Label fechaFinn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label numeroEndulzadas;
+        private System.Windows.Forms.Label numeroEndulzadass;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label frecuenciaEndulzada;
+        private System.Windows.Forms.Label frecuenciaEndulzadaa;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label valorEndulzada;
+        private System.Windows.Forms.Label valorEndulzadaa;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label valorRegalo;
+        private System.Windows.Forms.Label valorRegaloo;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label proximaEndulzada;
+        private System.Windows.Forms.Label proximaEndulzadaa;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label fechaInicioo;
     }
 }

@@ -15,7 +15,7 @@ namespace Laboratorio_3
     public partial class Datos : Form
     {
         int contador = 0;
-        AmigoSecreto amigoSecreto = null;
+        public AmigoSecreto amigoSecreto = null;
 
         public Datos(AmigoSecreto amigoSecreto)
         {
@@ -42,7 +42,7 @@ namespace Laboratorio_3
 
                 amigoSecreto.asignacionJugador(nombre, correo, endulzada, regalo, contador);
 
-                if (cantJuga - 1 > contador)
+                if (cantJuga > contador)
                 {
                     contador++;
                     nombree.Clear();
@@ -51,13 +51,13 @@ namespace Laboratorio_3
                     regaloo.Clear();
 
                 }
-                if (cantJuga - 2 == contador)
+                if (cantJuga - 1 == contador)
                 {
                     button1.Text = "Ver";
                 }
-                if (cantJuga - 1 == contador)
+                if (cantJuga == contador)
                 {
-                    Informacion informacion = new Informacion();
+                    Informacion informacion = new Informacion(amigoSecreto);
                     informacion.Show();
                     this.Hide();
                 }
