@@ -51,7 +51,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 18);
+            this.label1.Location = new System.Drawing.Point(54, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 23);
             this.label1.TabIndex = 0;
@@ -96,7 +96,7 @@
             // numeroEndulzadass
             // 
             this.numeroEndulzadass.AutoSize = true;
-            this.numeroEndulzadass.Location = new System.Drawing.Point(134, 108);
+            this.numeroEndulzadass.Location = new System.Drawing.Point(159, 108);
             this.numeroEndulzadass.Name = "numeroEndulzadass";
             this.numeroEndulzadass.Size = new System.Drawing.Size(35, 13);
             this.numeroEndulzadass.TabIndex = 8;
@@ -114,7 +114,7 @@
             // frecuenciaEndulzadaa
             // 
             this.frecuenciaEndulzadaa.AutoSize = true;
-            this.frecuenciaEndulzadaa.Location = new System.Drawing.Point(149, 134);
+            this.frecuenciaEndulzadaa.Location = new System.Drawing.Point(159, 134);
             this.frecuenciaEndulzadaa.Name = "frecuenciaEndulzadaa";
             this.frecuenciaEndulzadaa.Size = new System.Drawing.Size(35, 13);
             this.frecuenciaEndulzadaa.TabIndex = 10;
@@ -132,7 +132,7 @@
             // valorEndulzadaa
             // 
             this.valorEndulzadaa.AutoSize = true;
-            this.valorEndulzadaa.Location = new System.Drawing.Point(126, 161);
+            this.valorEndulzadaa.Location = new System.Drawing.Point(159, 161);
             this.valorEndulzadaa.Name = "valorEndulzadaa";
             this.valorEndulzadaa.Size = new System.Drawing.Size(35, 13);
             this.valorEndulzadaa.TabIndex = 12;
@@ -150,7 +150,7 @@
             // valorRegaloo
             // 
             this.valorRegaloo.AutoSize = true;
-            this.valorRegaloo.Location = new System.Drawing.Point(97, 187);
+            this.valorRegaloo.Location = new System.Drawing.Point(159, 187);
             this.valorRegaloo.Name = "valorRegaloo";
             this.valorRegaloo.Size = new System.Drawing.Size(41, 13);
             this.valorRegaloo.TabIndex = 14;
@@ -168,7 +168,7 @@
             // proximaEndulzadaa
             // 
             this.proximaEndulzadaa.AutoSize = true;
-            this.proximaEndulzadaa.Location = new System.Drawing.Point(134, 215);
+            this.proximaEndulzadaa.Location = new System.Drawing.Point(159, 215);
             this.proximaEndulzadaa.Name = "proximaEndulzadaa";
             this.proximaEndulzadaa.Size = new System.Drawing.Size(41, 13);
             this.proximaEndulzadaa.TabIndex = 16;
@@ -187,7 +187,7 @@
             // fechaInicioo
             // 
             this.fechaInicioo.AutoSize = true;
-            this.fechaInicioo.Location = new System.Drawing.Point(117, 59);
+            this.fechaInicioo.Location = new System.Drawing.Point(159, 59);
             this.fechaInicioo.Name = "fechaInicioo";
             this.fechaInicioo.Size = new System.Drawing.Size(35, 13);
             this.fechaInicioo.TabIndex = 18;

@@ -17,10 +17,11 @@ namespace Laboratorio_3
         int numEndulzadas;
         int frecuencia;
         int valorEndulzada;
-        int valorRegalo; 
+        int valorRegalo;
+        int numeroAleatorio;
 
         //Creacion de vector
-        private Jugador[] jugadores;
+        public Jugador[] jugadores;
 
         //Metodo retornar cantidad de jugadores
         public int getCantJuga()
@@ -28,7 +29,7 @@ namespace Laboratorio_3
             return cantJuga;
         }
 
-        //
+        //Metodo para definir datos del juego
         public  void DatosAmigo(int cantJuga, DateTime fechaInicio, DateTime descubirmiento, int numEndulzadas, int frecuencia,
             int valorEndulzada, int valorRegalo)
         {
@@ -39,8 +40,10 @@ namespace Laboratorio_3
             this.frecuencia = frecuencia;
             this.valorEndulzada = valorEndulzada;
             this.valorRegalo = valorRegalo;
+            jugadores = new Jugador[cantJuga];
         }
 
+        //Metodo para retornar datos de los jugadores
         public String nombreJugador(int i)
         {
             return jugadores[i].getNombre();
@@ -65,51 +68,37 @@ namespace Laboratorio_3
         //Metodo asignar jugador a posicion del vector
         public void asignacionJugador(String nombre, String correo, String endulzadaIdeal, String regaloIdeal, int i)
         {
-            Jugador[] jugadores = new Jugador[cantJuga];
             jugadores[i] = new Jugador(nombre, correo, endulzadaIdeal, regaloIdeal);
         }
 
         //Metodo asignar el amigo secreto a jugador
         public void asignarAmigo()
         {
+
             Random random = new Random();
-            int[] numerosAleatorios = new int[cantJuga];
-
-            int numeroMaximo = cantJuga;
-
-            for (int i = 0; i < cantJuga; i++)
+            Boolean repetir = true;
+            while (repetir)
             {
-                int numeroAleatorio;
-                bool repetido;
-
-                do
+                numeroAleatorio = random.Next(0, cantJuga - 1);
+                if (numeroAleatorio != 0)
                 {
-                    numeroAleatorio = random.Next(1, numeroMaximo + 1);
-                    repetido = false;
-
-                    for (int j = 0; j < i; j++)
-                    {
-                        if (numerosAleatorios[j] == numeroAleatorio && numeroAleatorio != i)
-                        {
-                            repetido = true;
-                            break;
-                        }
-                    }
+                    repetir = false;
                 }
-                while (repetido);
-
-                numerosAleatorios[i] = numeroAleatorio;
             }
 
+            //Se guardan el valor del amigo secreto de cada jugador
             for (int i = 0; i < cantJuga; i++)
             {
-                int indiceAmigoSecreto = numerosAleatorios[i];
-                Jugador jugadorActual = jugadores[i];
-                jugadorActual.setAmigoSecreto(indiceAmigoSecreto);
+                if (numeroAleatorio == cantJuga)
+                {
+                    numeroAleatorio = 0;
+                }
+                jugadores[i].setAmigoSecreto(numeroAleatorio);
+                numeroAleatorio++;
             }
 
         }
-
+        //Metodos para retornar datos del juego
         public DateTime getFechaInicio()
         {
             return fechaInicio;
@@ -135,6 +124,7 @@ namespace Laboratorio_3
             return valorRegalo;
         }
 
+        //Metodo que retorna cuando es la proxima endulzada
         public String proximaEndulzada()
         {
             if (fechaInicio > DateTime.Now)

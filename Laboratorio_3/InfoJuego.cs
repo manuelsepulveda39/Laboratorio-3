@@ -10,48 +10,41 @@ using System.Windows.Forms;
 
 namespace Laboratorio_3
 {
+    //Metodo para llevar a cabo form 4 (infojuego)
     public partial class InformacionJuego : Form
     {
         AmigoSecreto amigoSecreto = null;
-        DateTime fechaInicio;
-        DateTime fechaDescubrimiento;
-        int numEndulzada;
-        int frecuencia;
-        int valorEndulzada;
-        int valorRegalo;
 
+        //Metodo al inicializar el form
         public InformacionJuego(AmigoSecreto amigoSecreto)
         {
+            //Se igualan las instancias de la clase AmigoSecreto
             InitializeComponent();
             this.amigoSecreto = amigoSecreto;
 
-            DateTime fechaInicio = amigoSecreto.getFechaInicio();
-            DateTime fechaDescubrimiento = amigoSecreto.getDescubrimiento();
-            int numEndulzada = amigoSecreto.getNumEndulzadas();
-            int frecuencia = amigoSecreto.getFrecuencia();
-            int valorEndulzada = amigoSecreto.getValorEndulzada();
-            int valorRegalo = amigoSecreto.getValorRegalo();
-            String proxima = amigoSecreto.proximaEndulzada();
-
-            fechaInicioo.Text = fechaInicio.ToString();
-            fechaFinn.Text = fechaDescubrimiento.ToString();
-            numeroEndulzadass.Text = numEndulzada.ToString();
-            frecuenciaEndulzadaa.Text = frecuencia.ToString();
-            valorEndulzadaa.Text = valorEndulzada.ToString();
-            valorRegaloo.Text = valorRegalo.ToString();
-            proximaEndulzadaa.Text = proxima;
+            //Se muestran los datos del amigo secreto
+            fechaInicioo.Text = amigoSecreto.getFechaInicio().ToString();
+            fechaFinn.Text = amigoSecreto.getDescubrimiento().ToString();
+            numeroEndulzadass.Text = amigoSecreto.getNumEndulzadas().ToString();
+            frecuenciaEndulzadaa.Text = amigoSecreto.getFrecuencia().ToString();
+            valorEndulzadaa.Text = amigoSecreto.getValorEndulzada().ToString();
+            valorRegaloo.Text = amigoSecreto.getValorRegalo().ToString();
+            proximaEndulzadaa.Text = amigoSecreto.proximaEndulzada();
         }
 
-        private void informacionJuego_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
 
+        //Metodo boton (regresar)
         private void button1_Click(object sender, EventArgs e)
         {
             Informacion informacion = new Informacion(amigoSecreto);
             this.Hide();
             informacion.Show();
+        }
+
+        //Metodo para evitar errores de cerrado de pestañas
+        private void informacionJuego_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

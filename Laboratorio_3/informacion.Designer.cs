@@ -48,7 +48,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 9);
+            this.label1.Location = new System.Drawing.Point(62, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(205, 28);
             this.label1.TabIndex = 0;
@@ -111,7 +111,7 @@
             // endulzadaIdeal
             // 
             this.endulzadaIdeal.AutoSize = true;
-            this.endulzadaIdeal.Location = new System.Drawing.Point(114, 125);
+            this.endulzadaIdeal.Location = new System.Drawing.Point(138, 125);
             this.endulzadaIdeal.Name = "endulzadaIdeal";
             this.endulzadaIdeal.Size = new System.Drawing.Size(35, 13);
             this.endulzadaIdeal.TabIndex = 8;
@@ -120,7 +120,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 125);
+            this.label6.Location = new System.Drawing.Point(40, 125);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 13);
             this.label6.TabIndex = 7;
@@ -129,7 +129,7 @@
             // regaloIdeal
             // 
             this.regaloIdeal.AutoSize = true;
-            this.regaloIdeal.Location = new System.Drawing.Point(98, 148);
+            this.regaloIdeal.Location = new System.Drawing.Point(138, 148);
             this.regaloIdeal.Name = "regaloIdeal";
             this.regaloIdeal.Size = new System.Drawing.Size(35, 13);
             this.regaloIdeal.TabIndex = 10;
@@ -138,7 +138,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(23, 148);
+            this.label7.Location = new System.Drawing.Point(40, 148);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 13);
             this.label7.TabIndex = 9;

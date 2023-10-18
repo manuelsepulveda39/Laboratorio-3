@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Laboratorio_3
 {
     //Creacion de clase Jugador
-    internal class Jugador
+    public class Jugador
     {
         //Definicion de variables
         String nombre;
